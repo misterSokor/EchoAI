@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with AI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+    <h1>Chat with AI</h1>
+    <input type="text" id="prompt" placeholder="Ask something..." />
+    <button onclick="sendPrompt()">Send</button>
+    <div id="response" class="response"></div>
+</div>
+
+<script>
+    function sendPrompt() {
+        const prompt = document.getElementById("prompt").value;
+        if (!prompt) {
+            alert("Please enter a question.");
+            return;
+        }
+
+        fetch(`/chat?prompt=${encodeURIComponent(prompt)}`)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("response").innerText = data;
+            })
+            .catch(error => console.error("Error:", error));
+    }
+</script>
+</body>
+</html>
