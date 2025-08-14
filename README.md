@@ -1,5 +1,5 @@
 
-# E<img width="311" height="264" alt="Screen Shot 2025-08-13 at 21 59 27" src="https://github.com/user-attachments/assets/e49c247d-82a8-49a3-8f80-08b6e022748d" />
+# <img width="311" height="264" alt="Screen Shot 2025-08-13 at 21 59 27" src="https://github.com/user-attachments/assets/e49c247d-82a8-49a3-8f80-08b6e022748d" />
 choAI — Simple Chat API 🤖🗣️
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
